@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+    <title>Array Compare</title>
+     <!-- compare two arryas to judge if they are similar or not-->
+</head>
+<body>
+    <script type="text/javascript">   
+        /*  Defination of 'similar':
+         *  Member types between two arrays should be the same, the order could be different 
+         *  Length of both arrays should be the same.
+         *  Need to differentiate the types including: String, Boolean, Number, undefined, null, function(){}，Date, window
+         */
+         
+    function arraysSimilar(arr1, arr2){
+        if(arr1 instanceof Array && arr2 instanceof Array){
+            var leng1=arr1.length;
+            var leng2=arr2.length;
+
+            if(leng1!=leng2){
+                return false
+            }
+
+            var typeStore1=[];
+            var typeStore2=[]; 
+            for(var i=0;i<arr1.length;i++){
+                var checkType_1=_typeof(arr1[i])
+                if(typeStore1.join().indexOf(checkType_1)==-1){
+                    typeStore1.push(checkType_1);
+                }
+                var checkType_2=_typeof(arr2[i]);
+                if(typeStore2.join().indexOf(checkType_2)==-1){
+                    typeStore2.push(checkType_2);
+                }
+                
+            }   
+            typeStore1=typeStore1.sort();
+            typeStore2=typeStore2.sort();
+            if(typeStore1.join()==typeStore2.join()){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        else{
+            return false;
+            }
+}
+
+
+        function _typeof(item){
+            var typeResult;
+            if ((typeof item)!="object"){
+                typeResult=typeof item;
+            }
+            else if (item==null){
+                typeResult="null";
+            }
+            else if (item==window){
+                typeResult="window";
+            }
+            else if (item instanceof Date){
+                typeResult="Date";
+            }
+            else {
+                typeResult="object";
+            }
+            return typeResult;
+        }
+
+             
+    </script>
+   <script src="Array Compare.js"></script>
+</body>
+</html>
