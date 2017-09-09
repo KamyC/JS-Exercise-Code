@@ -1,24 +1,27 @@
 .top{
-
 	background:#F5FFFA;
 	text-align: left;
 	/*border:solid 1px;*/
 	width:100%;
 	/*display: inline-block;*/
 }
-.part_1{
-	position:relative;
-	height:300px;
+.part_A{
+	height:700px;
 	margin-top:5px;
-	background:#DCDCDC;
-	opacity:0.5;
+	margin-left:10px;
+	/*border:solid black 2px;*/
+	width:49%;
+	display: inline-block;
+	float: left;
 }
-.part_2{
+.part_B{
+	height:700px;
 	margin-top:5px;
-	position:relative;
-	height: 300px;
-	background:#DCDCDC;
-	opacity:0.5;
+	margin-left:10px;
+	/*border:solid red 2px;*/
+	width:49%;
+	display: inline-block;
+	float: left;
 }
 .titleContainer{
 	width:45%;
@@ -52,6 +55,107 @@
 }
 .imgTitle{
 	font-size:8px ;
-	/*font-family: Italic;*/
 	font-weight: bold;
+}
+.part_A_Half a{
+	display: block;
+	float:left;
+	margin-left:20px;
+	width:210px;
+	height:290px;
+	text-align: center;
+	position:relative;
+	text-decoration: none;
+
+}
+.part_A_Half img{
+ 	width:210px;
+	height:290px;
+}
+.part_A_Half .info{
+	display: none;
+	background-color: white;
+	height: 290px;
+	float:left;
+}
+.info h1{
+	font-size: 15px;
+	font-weight: bold;
+	color:#778899;
+	line-height: 0 auto;
+}
+.info p{
+	font-size:11px;
+	text-align: center;
+	font-style:oblique;
+	color:#B0C4DE;
+}
+.part_B h1{
+	line-height: 0 auto;
+	margin:5px 10px;
+	font-size: 20px;
+	color:#808080;
+}
+.part_B h2{
+	line-height: 0 auto;
+	margin: 5px 0px 5px 0px; 
+	font-size: 15px;
+	color:#808080;
+}
+.part_B p{
+	line-height: 0 auto;
+	font-size: 13px;
+	color:#808080;
+}
+.imgFrame{
+	/*border:solid black 2px;*/
+	height:295px;
+	margin-top:10px;
+	overflow: hidden;
+
+	} 
+.eachImg{
+	width:230px;
+	height:290px;
+	margin-left: 10px;
+	float:left;
+	display: inline-block;
+	/*border:solid red 2px;*/
+}
+.eachImg .rightarrow{
+	width:50px;
+	height: 20px;
+	position: absolute;
+	z-index: 100;
+	margin-left: 180px;
+	opacity: 0.5
+}
+.eachImg img{
+	width:230px;
+	height:230px;
+	z-index: -99;
+	}
+.box{
+	font-size: 12px;
+	color:#000080;
+	display:none;
+	width:230px;
+	height: 50px;
+	text-align: center;
+	background-color: #EDEDED;
+	float:left;
+}
+.box p{
+	margin-top: 0px;
+	font-size: 11px;
+	color: black;
+}
+.tinkling{
+	height:20px;
+	/*background-color: black;*/
+	margin-left:10px;
+}
+.tinkling .arrow{
+	height: 100%;
+	margin-left:2px;
 }
