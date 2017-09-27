@@ -1,0 +1,30 @@
+.wrap{
+	width:1000px;
+	height: 700px;
+	border:black solid 5px;
+	margin: 0 auto;
+	border-radius: 50px;
+	overflow: hidden;
+}
+.wrap .screen{
+	height:600px;
+	width: 100%;
+	background-color:#ccc;
+	position:relative;
+}
+.wrap .control-panel{
+	height: 100px;
+	background-color: #666;
+	border-top:black 5px solid;
+}
+.control-panel form{
+	margin-top:10px;
+}
+form .form-group{	
+	width:800px;
+	display: inline-block;
+	margin-left:50px;
+}
+.string{
+	font-size: 20px;
+}
