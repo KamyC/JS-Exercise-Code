@@ -1,0 +1,40 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+.BG{
+	height:800px;
+	width: 100%;
+	position: relative;
+}
+.box{
+	width:400px;
+	background-color: white;
+	border-radius: 10px;
+	margin:0 auto;
+	top:25%;
+	position: relative;
+	overflow: hidden;
+
+}
+.box .contents{
+	height: 70%;
+	width: 100%;
+	background-color: red;
+	padding-top:40px;
+	text-align: center;
+}
+
+.box .control{
+	height: 80px;
+	width: 100%;
+	background-color: blue;
+
+}
+.btn{
+	margin-right:20px;
+	margin-top: 20px;
+	float: right;
+	color: white;
+}
