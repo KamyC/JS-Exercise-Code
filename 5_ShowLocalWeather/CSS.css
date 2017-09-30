@@ -1,0 +1,19 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.title{
+	text-align: center;
+	font-size: 30px;
+	color: #CCC;
+}
+.contents h3{
+	color:black;
+	text-align: center;
+	margin-top:10px;
+}
+p{
+	margin-left:730px;
+	line-height: 30px;
+}
