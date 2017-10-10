@@ -1,0 +1,35 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.wrap{	
+	height: 500px;
+	width:100%;
+	background-color: #CCC;
+}
+.box{
+	/*background-color: #DCDCDC;*/
+	left:50%;
+	top:50%;
+	position: fixed;
+	height:50%;
+	width: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+
+}
+.box .random{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+	font-family: "Lucida Grande","Lucida Sans Unicode";
+}
+.input{
+	margin-top:10px;
+	margin-left: 280px;
+}
+.ps{
+	text-align: center;
+	margin-top:10px;
+	font-size: 12px;
+	color: #F8F8FF;
+}
